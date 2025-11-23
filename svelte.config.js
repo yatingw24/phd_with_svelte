@@ -14,7 +14,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: dev ? '' : '/example-svelte-viz-page',
+			base: dev ? '' : '/phd_svelte',
 		},
 		adapter: adapter({
 			// default options are shown
