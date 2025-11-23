@@ -64,11 +64,21 @@ p {
 .chart-container {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .chart-container > div {
   width: 100%;
+}
+
+.chart-container .chart-title {
+  margin-top: 0;         /* prevent extra top gap */
+  margin-bottom: 0.5rem;
+}
+
+.chart-container .chart-subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

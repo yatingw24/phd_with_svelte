@@ -40,7 +40,6 @@
       .x((d) => xPositionScale(d["Academic Year"]))
       .y((d) => yPositionScale(d.median_pay));
 
-    // Load data (static/data -> /data)
     d3.json(`${base}/data/linechart.json`)
       .then(ready)
       .catch((error) => {

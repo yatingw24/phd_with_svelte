@@ -5,8 +5,6 @@
 </script>
 
 <main class="content">
-
-  <!-- Title + Subhead -->
   <h1>Where you Study Could Affect the Size of Your Stipend</h1>
 
   <p class="subhead">
@@ -14,14 +12,12 @@
     to their English PhDs. Larger circles represent higher stipend amounts.
   </p>
 
-  <!-- MAP CHART -->
   <section class="chart-container">
     <div>
       <MapTwo />
     </div>
   </section>
 
-  <!-- TEXTUAL STORY -->
   <p>
     When the National Institute of Health announced a funding cut of $4 million, several 
     universities responded by suspending doctoral admissions.
@@ -77,7 +73,6 @@
     cover basic living expenses.
   </p>
 
-  <!-- LINE CHART -->
   <section class="chart-container">
     <div>
       <h3 class="chart-title">PhD stipends by field of study over time (2015–2022)</h3>
