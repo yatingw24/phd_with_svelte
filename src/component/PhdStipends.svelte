@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import * as d3 from "d3";
+  import { base } from "$app/paths"; 
 
   let container;
 
@@ -40,7 +41,7 @@
       .y((d) => yPositionScale(d.median_pay));
 
     // Load data (static/data -> /data)
-    d3.json("/data/linechart.json")
+    d3.json(`${base}/data/linechart.json`)
       .then(ready)
       .catch((error) => {
         console.log("Failed with", error);

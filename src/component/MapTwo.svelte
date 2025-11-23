@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
   import * as topojson from "topojson-client";
+  import { base } from "$app/paths";
 
   let container;
 
@@ -37,10 +38,10 @@
     const mapProjection = d3.geoAlbersUsa();
     const mapPath = d3.geoPath().projection(mapProjection);
 
-    // Load both datasets (static/data/... -> /data/...)
+
     Promise.all([
-      d3.json("/data/us_states.topojson"),
-      d3.json("/data/school_coor.json")
+    d3.json(`${base}/data/us_states.topojson`),
+    d3.json(`${base}/data/school_coor.json`)
     ])
       .then(([mapJson, schoolData]) => {
         ready(mapJson, schoolData);
