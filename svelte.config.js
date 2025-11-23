@@ -14,7 +14,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: dev ? '' : '/phd_svelte',
+			base: dev ? '' : '/phd_with_svelte',
 		},
 		adapter: adapter({
 			// default options are shown
