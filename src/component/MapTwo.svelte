@@ -20,10 +20,11 @@
     const mapSvg = d3
       .select(container)
       .append("svg")
-      .attr("height", mapHeight)
-      .attr("width", mapWidth)
+      .attr("viewBox", `0 0 ${mapWidth} ${mapHeight}`)
+      .attr("preserveAspectRatio", "xMinYMin meet")
       .append("g")
-      .attr("transform", `translate(${mapMargin.left},${mapMargin.top})`);
+      .attr("transform", `translate(${mapMargin.left}, ${mapMargin.top})`);
+
 
     const mapColorScale = d3.scaleOrdinal().range(["#F5F5DC"]);
 

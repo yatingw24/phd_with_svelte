@@ -52,7 +52,6 @@
         d.median_pay = +d.median_pay;
       });
 
-      // Update scales
       const years = [...new Set(datapoints.map((d) => d["Academic Year"]))].sort();
       const maxPay = d3.max(datapoints, (d) => d.median_pay);
 
