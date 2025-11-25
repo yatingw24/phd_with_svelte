@@ -8,7 +8,6 @@
   onMount(() => {
     drawMultiline();
   });
-
   function drawMultiline() {
     const margin = { top: 20, right: 200, bottom: 80, left: 60 };
     const width = 850;
@@ -16,16 +15,13 @@
     const chartWidth = width - margin.left - margin.right;
     const chartHeight = height - margin.top - margin.bottom;
 
-    const svg = d3
-      .select(container)
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .append("g")
-      .attr(
-        "transform",
-        `translate(${margin.left},${margin.top})`
-      );
+  const svg = d3
+    .select(container)
+    .append("svg")
+    .attr("viewBox", `0 0 ${width} ${height}`)
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
 
     // Scales
     const xPositionScale = d3.scalePoint().range([0, chartWidth]);

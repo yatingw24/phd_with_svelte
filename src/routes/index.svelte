@@ -75,7 +75,7 @@
 
   <section class="chart-container">
     <div>
-      <h3 class="chart-title">PhD stipends by field of study over time (2015–2022)</h3>
+      <h3 class="chart-title">PhD Stipends by Field of Study Over Time (2015–2022)</h3>
       <p class="chart-subtitle">Each line represents a field of study.</p>
 
       <PhdStipends />
